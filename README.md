@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# silverorange Quality Assurance Exercise
 
-## Available Scripts
+This exercise is designed to assess how you approach tasks required in your QA
+position. We are interested to see how you work as well, as what your final
+results are, so please include documentation.
 
-In the project directory, you can run:
+For the test automations, please commit tests inside a Git repository and
+provide access to silverorange.
 
-### `npm start`
+## The Application
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This code repository contains a sample application that needs to be tested. The
+application allows adding and removing items from a list. The application is
+simple and not connected to a database, so reloading the page will clear the
+application state.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The tests were are looking for and instructions on how to run the application
+are detailed below.
 
-### `npm test`
+## Exercise Requirements
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+With the provided React application, perform the following:
 
-### `npm run build`
+1. Write a test document for testing adding a new item to the list. Include
+   testing error states. This document should be possible to follow to do a
+   manual test.
+2. Using any framework or language of your choosing, write an automated version
+   of the test. Include instructions on how we can install and run the
+   framework.
+3. Add an additional automated test for removing items.
+4. The application has some simple validation functions in `src/validations`.
+   Using the built-in test framework, add unit tests for these functions. See
+   `src/components/Form.js` for an example of how to import and use the
+   validation functions.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the Application
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+This is a [create-react-app](https://facebook.github.io/create-react-app/)
+bootstrapped React application. To run the application on your machine,
+you will need:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node JS 8 or 10 https://nodejs.org/en/
+- Yarn https://yarnpkg.com/en/
 
-### `npm run eject`
+With those pre-requisites installed, follow these steps to run the application:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1.  Clone the git repository to your machine
+2.  Inside the repository, run `yarn install`
+3.  Inside the repository, run `yarn start`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will open the application in your default web browser at
+http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Running the Test Framework
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Create-react-app integrates [Jest](https://jestjs.io/) by default. Files
+named `*.test.js` are automatically included in the test suite. The test suite
+can be run with:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```sh
+yarn test
+```
