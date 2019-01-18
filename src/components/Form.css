@@ -1,0 +1,41 @@
+.Form {
+  margin: 40px 0 0;
+}
+
+.Form__error {
+  margin: 0 0 10px;
+  padding: 20px;
+  background: #dd4444;
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.Form label {
+  display: block;
+  margin: 20px 0 10px;
+}
+
+.Form label > span {
+  display: block;
+  margin: 0 0 5px;
+}
+.Form label > span span {
+  color: #888;
+}
+
+.Form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: 1px solid #888;
+}
+
+.Form input:focus {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Form__loading {
+  text-align: center;
+}
