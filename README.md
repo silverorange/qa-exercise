@@ -4,7 +4,7 @@ This exercise is designed to assess how you approach tasks required in your QA
 position. We are interested to see how you work as well, as what your final
 results are, so please include documentation.
 
-For the test automations, please commit tests inside a Git repository and
+For the test automations, please commit tests inside a git repository and
 provide access to silverorange.
 
 ## The Application
@@ -14,7 +14,7 @@ application allows adding and removing items from a list. The application is
 simple and not connected to a database, so reloading the page will clear the
 application state.
 
-The tests were are looking for and instructions on how to run the application
+The tests we are looking for, and instructions on how to run the application
 are detailed below.
 
 ## Exercise Requirements
