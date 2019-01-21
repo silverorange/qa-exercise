@@ -12,6 +12,8 @@
   "devDependencies": {
     "cypress": "^3.1.4",
     "cypress-testing-library": "^2.3.5",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
     "eslint": "5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",

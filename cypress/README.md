@@ -1,5 +1,5 @@
 ## Integration Tests Setup and Installation
-- run `yarn install` from the root will add cypress and cypress testing library as `devDependencies`
+Running `yarn install` from the root will add cypress and cypress testing library as `devDependencies`.
 
 ## Running the Tests
 1. use `yarn start` to launch the app
@@ -7,7 +7,7 @@
 1. select `list.js` to run the test
 
 ## Devving the Tests
-- tests live in `/integration/`
+- tests live in `cypress/integration/`
 - commands live in `cypress/support/commands.js`
 - full cypress documentation can be found at https://docs.cypress.io/ 
 - test library documentation can be found at https://github.com/kentcdodds/cypress-testing-library
@@ -19,7 +19,7 @@
 - list can not be re-ordered
 
 ### Set up:
-- `yarn start` in the root folder
+- run `yarn start` in the root folder to compile the app
 - navigate to `http://localhost:3000/` in your browser window
 
 ### Defaut elements present:
