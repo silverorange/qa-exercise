@@ -33,6 +33,9 @@ describe('List app', function() {
     	.type(validItemTitle)
     cy.getByText('Add Item').click()
     cy.getByText(validItemTitle).should('exist')
+    cy.getByText('Wac, ft. Valeria - “Tortoise”')
+    	.parent('div')
+    	.find('button').should('exist')
   })
 
   it('allows user to remove an item', function() {
