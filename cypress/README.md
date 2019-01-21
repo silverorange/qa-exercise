@@ -1,0 +1,65 @@
+## Integration Tests Setup and Installation
+- run `yarn install` from the root will add cypress and cypress testing library as `devDependencies`
+- run `npx cypress open` from the root will open the test runner
+- select any test from the runner to execute individually
+- select `run all` from the runner to execute the entire suite
+
+## Devving the Tests
+- tests live in `/integration/`
+- commands live in `cypress/support/commands.js`
+- full cypress documentation can be found at https://docs.cypress.io/ 
+- test library documentation can be found at https://github.com/kentcdodds/cypress-testing-library
+
+## Test Document
+
+### Scope notes:
+- list is not saved so there is no need to test save state
+- list can not be re-ordered and items should appear in the order they're created in
+
+### Set up:
+	- `yarn start` in the root folder
+	- navigate to `http://localhost:3000/` in your browser window
+
+### Defaut elements present:
+Purpose: ensure that the app visually reflects provided documentation by including all the necessary elements and defaults.
+1. ensure the "Items" title is present 
+1. ensure the default list is present 
+	- list items contain the correct text
+	- list items contain a `Remove` button
+1. ensure the form field `Title` is present
+1. ensure validation tip is present
+1. ensure `Add Item` button is present
+Expected Result: all items are present and visible on the screen
+
+### Add an item:
+Purpose: ensure that the user can add an item to the list
+1. select the `Title` text field
+1. enter valid text into the field
+1. press `Add Item` button
+Expected Result: your text item is added to the bottom of the list, is styled to match, has an associated `Remove` button
+
+### Remove an item:
+Purpose: ensure that the user can remove an item from the list
+1. press the `Remove` button next to any list item
+Expected Result: the item is removed from the list
+
+### Validation - too few characters
+Purpose: ensure that the user can't create a list item if the text is shorter than 10 characters
+1. select the `Title` text field
+1. enter a text string shorter than 10 characters into the field
+1. press `Add Item` button
+Expected Result: your text item is not added, and an error message appears, "Title must be at least 10 characters."
+
+### Validation - too many characters
+Purpose: ensure that the user can't create a list item if the text is longer than 20 characters
+1. select the `Title` text field
+1. enter a text string longer than 20 characters into the field
+1. press `Add Item` button
+Expected Result: your text item is not added, and an error message appears, "Title can be at most 20 characters."
+
+### Validation - cross site scripting isn't possible
+Purpose: ensure that the user can't use text fields in the app to execute a script
+1. select the `Title` text field
+1. enter a script that is under 20 characters long
+1. press `Add Item` button
+Expected Result: the script is not run
