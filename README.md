@@ -1,50 +1,69 @@
-# silverorange Quality Assurance Exercise
+# silverorange QA Developer Exercise
 
-This exercise is designed to assess how you approach tasks required in your QA
-position. We are interested to see how you work as well, as what your final
-results are, so please include documentation.
+This exercise is designed to assess how you approach tasks required as a QA
+developer at silverorange. We are interested to see how you work as well, as
+what your final results are; include useful Git commit messages and comments
+where you think your code may be unclear.
 
-For the test automations, please commit tests inside a git repository and
+Please do not include your name or any other self-identifying information in
+code or commit messages as silverorange will anonymize your work before
+reviewing.
+
+For the test automations, please commit tests inside this Git repository and
 provide access to silverorange.
 
-## The Application
+## The Application to Test
 
-This code repository contains a sample application that needs to be tested. The
+This Git repository contains a sample application that needs to be tested. The
 application allows adding and removing items from a list. The application is
 simple and not connected to a database, so reloading the page will clear the
 application state.
 
-The tests we are looking for, and instructions on how to run the application
-are detailed below.
+The tasks we are asking you to complete, and instructions on how to run the
+application are detailed below:
 
-## Exercise Requirements
+## Tasks
 
-With the provided React application, perform the following:
+### (A) Writing a Test Plan
 
-1. Write a test document for testing adding a new item to the list. Include
-   testing error states. This document should be possible to follow to do a
-   manual test.
-2. Using any framework or language of your choosing, write an automated version
-   of the test. Include instructions on how we can install and run the
-   framework.
-3. Add an additional automated test for removing items.
-4. The application has some simple validation functions in `src/validations`.
-   Using the built-in test framework, add unit tests for these functions. See
-   `src/components/Form.js` for an example of how to import and use the
-   validation functions.
+- Write a test document to test adding a new item to the list.
+- Include testing of error states.
+- It should be possible to follow the document to manually test the
+  application.
+
+### (B) Automate the Test Plan
+
+- Using any framework or language of your choosing, write an automated version
+  of the test plan.
+- Include instructions on how we can install and run the automation.
+- Add an additional automated test for removing items from the list.
+
+### (C) Unit Testing
+
+- The application has some simple validation functions in `src/validations`.
+- Using the built-in test framework, add unit tests for these functions.
+- See `src/components/Form.js` for an example of how to import and use the
+  validation functions.
 
 ## Running the Application
 
 This is a [create-react-app](https://facebook.github.io/create-react-app/)
-bootstrapped React application. To run the application on your machine,
-you will need:
+React application. To run the application on your machine, you will need the
+following pre-requisites:
 
-- Node JS 8 or 10 https://nodejs.org/en/
-- Yarn https://yarnpkg.com/en/
+- (Node.js)[https://nodejs.org/en/] version 10 or greater
+- (Yarn)[https://classic.yarnpkg.com/en/docs/install/]
 
-With those pre-requisites installed, follow these steps to run the application:
+If you are using macOS and Homebrew, the following command will install the
+pre-requisites:
 
-1.  Clone the git repository to your machine
+```sh
+brew install node yarn
+```
+
+With the pre-requisites installed, follow these steps to run the application:
+
+1.  Clone the Git repository to your machine
 2.  Inside the repository, run `yarn install`
 3.  Inside the repository, run `yarn start`
 
