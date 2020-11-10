@@ -51,8 +51,8 @@ This is a [create-react-app](https://facebook.github.io/create-react-app/)
 React application. To run the application on your machine, you will need the
 following pre-requisites:
 
-- (Node.js)[https://nodejs.org/en/] version 10 or greater
-- (Yarn)[https://classic.yarnpkg.com/en/docs/install/]
+- [Node.js](https://nodejs.org/en/) version 10 or greater
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/)
 
 If you are using macOS and Homebrew, the following command will install the
 pre-requisites:
