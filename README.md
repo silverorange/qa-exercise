@@ -41,9 +41,12 @@ application are detailed below:
 ### (C) Unit Testing
 
 - The application has some simple validation functions in `src/validations`.
-- Using the built-in test framework, add unit tests for these functions.
+- Using the built-in Jest testing framework, add unit tests for these functions.
 - See `src/components/Form.js` for an example of how to import and use the
   validation functions.
+- See `src/App.test.js` for an example of how to create a test case in the Jest
+  framework.
+- You can run tests with `yarn test`
 
 ## Running the Application
 
