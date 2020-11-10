@@ -19,7 +19,7 @@ Item.defaultProps = {
 };
 
 Item.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   onRemove: PropTypes.func,
 };
