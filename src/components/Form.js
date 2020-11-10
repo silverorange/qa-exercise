@@ -14,7 +14,7 @@ class Form extends Component {
     this.state = {
       loading: false,
       error: null,
-      title: ''
+      title: '',
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -42,12 +42,12 @@ class Form extends Component {
         if (!minLength(10, title)) {
           this.setState(() => ({
             error: 'Title must be at least 10 characters.',
-            loading: false
+            loading: false,
           }));
         } else if (!maxLength(20, title)) {
           this.setState(() => ({
             error: 'Title can be at most 20 characters.',
-            loading: false
+            loading: false,
           }));
         } else {
           const { onAdd } = this.props;
@@ -89,11 +89,11 @@ class Form extends Component {
 }
 
 Form.defaultProps = {
-  onAdd: () => null
+  onAdd: () => null,
 };
 
 Form.propTypes = {
-  onAdd: PropTypes.func
+  onAdd: PropTypes.func,
 };
 
 export default Form;

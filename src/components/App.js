@@ -11,24 +11,24 @@ class App extends Component {
     this.state = {
       items: [
         {
-          title: 'Wac, ft. Valeria - “Tortoise”'
+          title: 'Wac, ft. Valeria - “Tortoise”',
         },
         {
-          title: 'Kishi Bashi - “The Ballad of Mr Steak”'
+          title: 'Kishi Bashi - “The Ballad of Mr Steak”',
         },
         {
-          title: 'Lucy Dacus - “Night Shift”'
+          title: 'Lucy Dacus - “Night Shift”',
         },
         {
-          title: 'Shamir - “Larry Clark”'
+          title: 'Shamir - “Larry Clark”',
         },
         {
-          title: 'Moloko - “Over & Over”'
+          title: 'Moloko - “Over & Over”',
         },
         {
-          title: 'Shugo Tokumaru - “Lita-Ruta”'
-        }
-      ]
+          title: 'Shugo Tokumaru - “Lita-Ruta”',
+        },
+      ],
     };
 
     this.handleAdd = this.handleAdd.bind(this);
@@ -36,16 +36,16 @@ class App extends Component {
   }
 
   handleAdd(item) {
-    this.setState(oldState => ({ items: [...oldState.items, item] }));
+    this.setState((oldState) => ({ items: [...oldState.items, item] }));
   }
 
   handleRemove(index) {
     const {
-      items: { length }
+      items: { length },
     } = this.state;
 
     if (index >= 0 && index <= length - 1) {
-      this.setState(oldState => {
+      this.setState((oldState) => {
         const newItems = oldState.items.slice();
         newItems.splice(index, 1);
         return { items: newItems };

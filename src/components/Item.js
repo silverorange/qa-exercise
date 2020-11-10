@@ -15,13 +15,13 @@ function Item(props) {
 }
 
 Item.defaultProps = {
-  onRemove: () => null
+  onRemove: () => null,
 };
 
 Item.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  onRemove: PropTypes.func
+  onRemove: PropTypes.func,
 };
 
 export default Item;
