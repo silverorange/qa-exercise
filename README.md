@@ -52,6 +52,7 @@ application are detailed below:
 
 - In a text file, describe future improvements or additions you would make to
   the automated testing system for this project.
+- If you have time, implement some or all of these recommendations.
 
 ## Running the Application
 
