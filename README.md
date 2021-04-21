@@ -1,9 +1,9 @@
-# silverorange QA Developer Exercise
+# silverorange QA Automation Specialist Exercise
 
 This exercise is designed to assess how you approach tasks required as a QA
-developer at silverorange. We are interested to see how you work as well, as
-what your final results are; include useful Git commit messages and comments
-where you think your code may be unclear.
+Automation Specialist at silverorange. We are interested to see how you work as
+well, as what your final results are; include useful Git commit messages and
+comments where you think your code may be unclear.
 
 Please do not include your name or any other self-identifying information in
 code or commit messages as silverorange will anonymize your work before
@@ -48,13 +48,18 @@ application are detailed below:
   framework.
 - You can run tests with `yarn test`
 
+### (D) Next Steps
+
+- In a text file, describe future improvements or additions you would make to
+  the automated testing system for this project.
+
 ## Running the Application
 
 This is a [create-react-app](https://facebook.github.io/create-react-app/)
 React application. To run the application on your machine, you will need the
 following pre-requisites:
 
-- [Node.js](https://nodejs.org/en/) version 10 or greater
+- [Node.js](https://nodejs.org/en/) version 12 or greater
 - [Yarn](https://classic.yarnpkg.com/en/docs/install/)
 
 If you are using macOS and Homebrew, the following command will install the
@@ -73,7 +78,7 @@ With the pre-requisites installed, follow these steps to run the application:
 This will open the application in your default web browser at
 http://localhost:3000.
 
-## Running the Test Framework
+## Running the Unit Test Framework
 
 Create-react-app integrates [Jest](https://jestjs.io/) by default. Files
 named `*.test.js` are automatically included in the test suite. The test suite
